@@ -6,7 +6,7 @@ This library was created to use it in combination with llama.cpp and is at this 
 ## Installation
 The easiest way to install is from PYPI
 ```shell
-pip install pydantic_gbnf_grammar_generator
+pip install pydantic-gbnf-grammar-generator
 ```
 
 Alternatively, you can install from source
