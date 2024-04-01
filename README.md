@@ -1,9 +1,22 @@
 # Pydantic GBNF Grammar Generator
 
 Pydantic GBNF Grammar Generator facilitates the conversion of Pydantic data models into GBNF grammars.
-This library was created to use it in combination with llama.cpp and is at this point in fact just a repackaged version of some Python scripts contained in the [llama.cpp repository](https://github.com/ggerganov/llama.cpp) to make integration into other prjects easier.
+This library was created to use it in combination with llama.cpp and is at this point in fact just a repackaged version of some Python scripts contained in the [llama.cpp repository](https://github.com/ggerganov/llama.cpp) to make integration into other projects easier.
 
-## Examples
+## Installation
+The easiest way to install is from PYPI
+```shell
+pip install pydantic_gbnf_grammar_generator
+```
+
+Alternatively, you can install from source
+```shell
+git clone https://github.com/rhohndorf/pydantic-gbnf-gammar-generator.git
+cd pydantic-gbnf-gammar-generator
+pip install -e .
+```
+
+## Usage
 The following example demonstrates the technical usage of the library. All examples can be found in the examples folder.
 To run the examples a llama.cpp server listing on port 8080 is required.
 
@@ -19,7 +32,7 @@ import requests
 
 from pydantic_gbnf_grammar_generator import generate_gbnf_grammar_and_documentation
 
-# Function to get completion on the llama.cpp server with grammar. Mistral his example 
+# Function to get completion on the llama.cpp server with grammar. 
 def create_completion(prompt, grammar):
     headers = {"Content-Type": "application/json"}
     data = {"prompt": prompt, "grammar": grammar, "stop": ["<|im_end|>"]}
