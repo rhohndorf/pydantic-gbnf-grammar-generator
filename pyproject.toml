@@ -3,8 +3,8 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pydantic_gbnf_gammar_generator"
-version = "0.1.0"
+name = "pydantic_gbnf_grammar_generator"
+version = "0.1.1"
 authors = [
   { name="Ruben Hohndorf", email="ruben.hohndorf@gmail.com" },
 ]
@@ -22,5 +22,5 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rhohndorf/pydantic-gbnf-gammar-generator"
-Issues = "https://github.com/rhohndorf/pydantic-gbnf-gammar-generator/issues"
+Homepage = "https://github.com/rhohndorf/pydantic-gbnf-grammar-generator"
+Issues = "https://github.com/rhohndorf/pydantic-gbnf-grammar-generator/issues"
