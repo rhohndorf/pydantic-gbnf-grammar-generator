@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydantic_gbnf_gammar_generator"
+version = "0.1.0"
+authors = [
+  { name="Ruben Hohndorf", email="ruben.hohndorf@gmail.com" },
+]
+description = "Generates GBNF grammars from pydantic models"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pydantic>=2.5.3",
+    "docstring_parser==0.16",
+]
+
+[project.urls]
+Homepage = "https://github.com/rhohndorf/pydantic-gbnf-gammar-generator"
+Issues = "https://github.com/rhohndorf/pydantic-gbnf-gammar-generator/issues"
