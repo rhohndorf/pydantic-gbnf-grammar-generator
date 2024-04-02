@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: release
-      url: https://pypi.org/p/pydantic-gbnf-gammar-generator  # Replace <package-name> with your PyPI project name
+      url: https://pypi.org/p/pydantic-gbnf-grammar-generator
     permissions:
       id-token: write  # IMPORTANT: mandatory for trusted publishing
 
