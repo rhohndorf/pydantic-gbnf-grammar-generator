@@ -1,6 +1,9 @@
 name: Publish Package
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - release
 
 jobs:
   pypi-publish:
